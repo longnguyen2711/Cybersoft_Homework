@@ -1,0 +1,67 @@
+/* Sub Navbar */
+#sub-navbar {
+  position: fixed;
+  top: 40px;
+  left: 0;
+  bottom: 0;
+  width: 250px;
+  background-color: black;
+  transition: 1s;
+  transform: translateX(-100%);
+}
+
+#sub-navbar .navbar-button {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  background: #f1a228;
+  width: 100%;
+  height: 40px;
+  text-align: right;
+  line-height: 40px;
+  font-size: 20px;
+  box-shadow: 0 0 10px #f1a228;
+  padding-right: 20px;
+}
+#sub-navbar .navbar-button:hover i {
+  transform: rotate(-3690deg);
+  transition: 10s;
+}
+#sub-navbar ul {
+  width: 100%;
+  padding: 30px 0;
+}
+#sub-navbar ul li {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 1px solid transparent;
+}
+#sub-navbar ul li a {
+  width: 100%;
+  font-size: 25px;
+  padding: 15px 0;
+  display: block;
+  display: flex;
+  align-items: center;
+}
+
+#btn-navbar:checked ~ .sub-navbar {
+  transform: translateX(0);
+}
+#btn-navbar {
+  display: none;
+}
+#btn-navbar:checked ~ .overlay {
+  display: block;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+

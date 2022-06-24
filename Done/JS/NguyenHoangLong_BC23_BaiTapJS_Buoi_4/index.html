@@ -1,0 +1,161 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài tập JavaScript buổi 4</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- BÀI TẬP JAVASCRIPT BUỔI 4 -->
+    <h1>BÀI TẬP JAVASCRIPT BUỔI 4</h1>
+    <!-- Exercise 1 -->
+    <div class="list d-flex text-center">
+      <div class="exercise-1 item">
+        <div class="content">
+          <h1>Exercise 1</h1>
+          <button id="btnAscending" class="btn btn-primary font-weight-bold">
+            Sắp xếp tăng dần
+          </button>
+          <input type="text" id="integer1" placeholder="Số nguyên thứ 1" />
+          <input type="text" id="integer2" placeholder="Số nguyên thứ 2" />
+          <input type="text" id="integer3" placeholder="Số nguyên thứ 3" />
+          <div class="result" id="divAscending"></div>
+        </div>
+      </div>
+      <!-- Exercise 2 -->
+      <div class="exercise-2 item">
+        <div class="content">
+          <h1>Exercise 2</h1>
+          <button id="btnGreeting" class="btn btn-primary font-weight-bold">
+            Chào hỏi thành viên (B | M | A | E)
+          </button>
+          <div class="result" id="divGreeting"></div>
+        </div>
+      </div>
+      <!-- Exercise 3 -->
+      <div class="exercise-3 item">
+        <div class="content">
+          <h1>Exercise 3</h1>
+          <button id="btnEvenOdd" class="btn btn-primary font-weight-bold">
+            Xuất số chẵn và số lẻ
+          </button>
+          <input type="text" id="number1" placeholder="Số nguyên thứ 1" />
+          <input type="text" id="number2" placeholder="Số nguyên thứ 2" />
+          <input type="text" id="number3" placeholder="Số nguyên thứ 3" />
+          <div class="result" id="divEvenOdd"></div>
+        </div>
+      </div>
+      <!-- Exercise 4 -->
+      <div class="exercise-4 item">
+        <div class="content">
+          <h1>Exercise 4</h1>
+          <button id="btnTriangle" class="btn btn-primary font-weight-bold">
+            Xét loại tam giác
+          </button>
+          <input type="text" id="slide1" placeholder="Nhập chiều dài cạnh thứ 1" />
+          <input type="text" id="slide2" placeholder="Nhập chiều dài cạnh thứ 2" />
+          <input type="text" id="slide3" placeholder="Nhập chiều dài cạnh thứ 3" />
+          <div class="result" id="divTriangle"></div>
+        </div>
+      </div>
+    </div>
+    <!----------------------------------------------------------------------------------->
+    <h1 class="mt-5">BÀI TẬP JAVASCRIPT BUỔI 4 THÊM</h1>
+    <!-- Exercise 1 -->
+    <div class="list d-flex text-center">
+      <div class="exercise-1b item">
+        <div class="content">
+          <h1>Exercise 1</h1>
+          <button id="btnDayMonthYear" class="btn btn-primary font-weight-bold">
+            Tìm ngày tháng năm liền kề
+          </button>
+          <input type="number" min="1" max="31" id="day" placeholder="Nhập ngày" />
+          <input type="number" min="1" max="12" id="month" placeholder="Nhập tháng" />
+          <input type="number" min="0" id="year" placeholder="Nhập năm" />
+          <div class="result" id="divDayMonthYear"></div>
+        </div>
+      </div>
+      <!-- Exercise 2 -->
+      <div class="exercise-2b item">
+        <div class="content">
+          <h1>Exercise 2</h1>
+          <button id="btnDayInMonth" class="btn btn-primary font-weight-bold">
+            Tìm số ngày trong tháng
+          </button>
+          <input type="number" min="1" max="12" id="monthE2" placeholder="Nhập tháng" />
+          <input type="number" min="1" id="yearE2" placeholder="Nhập năm" />
+          <div class="result" id="divDayInMonth"></div>
+        </div>
+      </div>
+      <!-- Exercise 3 -->
+      <div class="exercise-3 item">
+        <div class="content">
+          <h1>Exercise 3</h1>
+          <button id="btnSumUnitDozen" class="btn btn-primary font-weight-bold">
+            Đọc số có 3 chữ số
+          </button>
+          <input type="text" id="threeDigitNumber" placeholder="Nhập số có 3 chữ số" />
+          <div class="result" id="divSumUnitDozen"></div>
+        </div>
+      </div>
+      <!-- Exercise 4 -->
+      <div class="exercise-4 item">
+        <div class="content">
+          <h1>Exercise 4</h1>
+          <button id="btnFurthestStudent" class="btn btn-primary font-weight-bold" >
+            Sinh viên nhà cách xa trường nhất
+          </button>
+          <div>
+            <div class="coordinates d-flex align-items-center">
+              <p>Sinh viên A</p>
+              <input type="number" id="coordinatesAX" placeholder="x" />
+              <input type="number" id="coordinatesAY" placeholder="y" />
+            </div>
+            <div class="coordinates d-flex align-items-center">
+              <p>Sinh viên B</p>
+              <input type="number" id="coordinatesBX" placeholder="x" />
+              <input type="number" id="coordinatesBY" placeholder="y" />
+            </div>
+            <div class="coordinates d-flex align-items-center">
+              <p>Sinh viên C</p>
+              <input type="number" id="coordinatesCX" placeholder="x" />
+              <input type="number" id="coordinatesCY" placeholder="y" />
+            </div>
+            <div class="coordinates d-flex align-items-center">
+              <p>Trường</p>
+              <input type="number" id="coordinatesSchoolX" placeholder="x" />
+              <input type="number" id="coordinatesSchoolY" placeholder="y" />
+            </div>
+            <div class="result text-left" id="divFurthestStudent"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap 4.6.1 -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- JavaScript ------------------------------------>
+    <script src="./index.js"></script>
+  </body>
+</html>

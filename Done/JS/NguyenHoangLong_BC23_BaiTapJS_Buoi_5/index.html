@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài tập JavaScript buổi 5</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <h1>BÀI TẬP JAVASCRIPT BUỔI 5</h1>
+    <!-- Exercise 1 -->
+    <div class="list d-flex text-center">
+      <div class="exercise-1 item">
+        <div class="content">
+          <h1>Exercise 1</h1>
+          <button id="btnScore" class="btn btn-warning font-weight-bold">
+            Quản lý tuyển sinh
+          </button>
+          <div class="text_input">  
+            <input type="text" id="benchmark" placeholder="Nhập điểm chuẩn" />
+            <input type="text" id="firstScore" placeholder="Nhập điểm thi môn thứ 1" />
+            <input type="text" id="secondScore" placeholder="Nhập điểm thi môn thứ 2" />
+            <input type="text" id="thirdScore" placeholder="Nhập điểm thi môn thứ 3" />
+            <input type="text" id="regionScore" placeholder="Nhập khu vực ( A | B | C | X )" />
+            <input type="text" id="objectScore" placeholder="Nhập đối tượng ( 0 | 1 | 2 | 3 )" />
+          </div>
+          <div class="result" id="divScore"></div>
+        </div>
+      </div>
+      <!-- Exercise 2 -->
+      <div class="exercise-2 item">
+        <div class="content">
+          <h1>Exercise 2</h1>
+          <button id="btnElectricPay" class="btn btn-warning font-weight-bold">
+            Tính tiền điện
+          </button>
+          <div class="text_input">
+            <input type="text" id="electricPayer" placeholder="Nhập tên" />
+            <input type="number" min="0" id="electricUse" placeholder="Nhập số Kw điện" />
+          </div>          
+          <div class="result text-left" id="divElectricPay"></div>
+        </div>
+      </div>
+      <!-- Exercise 3 -->
+      <div class="exercise-3 item">
+        <div class="content">
+          <h1>Exercise 3</h1>
+          <button id="btnTaxPayable" class="btn btn-warning font-weight-bold">
+            Tính thuế thu nhập cá nhân
+          </button>
+          <div class="text_input">
+            <input type="text" id="taxPayer" placeholder="Nhập tên" />
+            <input type="number" min="0" id="dependentPersons" placeholder="Nhập số người phụ thuộc" />
+            <input type="number" min="0" id="totalIncome" placeholder="Nhập tổng thu nhập trong năm" />
+          </div>          
+          <div class="result text-left" id="divTaxPayable"></div>
+        </div>
+      </div>
+      <!-- Exercise 4 -->
+      <div class="exercise-4 item">
+        <div class="content">
+          <h1>Exercise 4</h1>
+          <button id="btnCustomerInvoice" class="btn btn-warning font-weight-bold">
+            Tính hóa đơn khách hàng
+          </button>
+          <div class="text_input text_input-4">
+            <div class="chooseCustomerType">
+              <ul class="d-flex">
+                <li class="type">
+                  <input type="radio" name="customer" id="individualCustomer" onclick="javascript:showConectionNumber();"/>
+                  <label for="individualCustomer" class="m-0">Cá nhân</label>
+                </li>    
+                <li class="type">
+                  <input type="radio" name="customer"id="businessCustomer" onclick="javascript:showConectionNumber();"/>
+                  <label for="businessCustomer" class="m-0">Doanh nghiệp</label>
+                </li>
+              </ul>
+            </div>
+            <input type="text" id="customerCode" placeholder="Nhập mã khách hàng" />
+            <input type="number" min="0" id="channelNumber" placeholder="Nhập số kênh cao cấp" />
+            <input style="display:none" type="number" min="0" id="conectionNumber" placeholder="Nhập số lượng kết nối"/>          
+          </div>          
+          <div class="result text-left" id="divCustomerInvoice"></div>
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap 4.6.1 -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- JavaScript ------------------------------------>
+    <script src="./index.js"></script>
+  </body>
+</html>

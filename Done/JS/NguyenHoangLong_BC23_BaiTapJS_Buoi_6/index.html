@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài tập JavaScript buổi 6</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <h1>BÀI TẬP JAVASCRIPT BUỔI 6</h1>
+    <!-- Exercise 1 -->
+    <div class="list d-flex text-center">
+      <div class="exercise-1 item">
+        <div class="content">
+          <h1>Exercise 1</h1>
+          <button id="btnFindNumber" class="btn btn-primary font-weight-bold">
+            Số nguyên dương nhỏ nhất <br>
+            1 + 2 + ... + n > 10000
+          </button>
+          <div class="result" id="divFindNumber"></div>
+        </div>
+      </div>
+      <!-- Exercise 2 -->
+      <div class="exercise-2 item">
+        <div class="content">
+          <h1>Exercise 2</h1>
+          <button id="btnSumExponential" class="btn btn-primary font-weight-bold">
+            Tính tổng <br>
+            S(n) = x + x^2 + ... + x^n
+          </button>
+          <div class="text_input">
+            <input type="text" id="numberX" class="text-primary" placeholder="Nhập số x" />
+            <input type="text" id="numberN" class="text-primary" placeholder="Nhập số n (n là số nguyên, n > 0)"/>
+          </div>          
+          <div class="result" id="divSumExponential"></div>
+        </div>
+      </div>
+      <!-- Exercise 3 -->
+      <div class="exercise-3 item">
+        <div class="content">
+          <h1>Exercise 3</h1>
+          <button id="btnCalcFactorial" class="btn btn-primary font-weight-bold">
+            Tính giai thừa <br>
+            n!
+          </button>
+          <div class="text_input">
+            <input type="text" id="numberCalcFactorial" class="text-primary" placeholder="Nhập số cần tính giai thừa" />
+          </div>          
+          <div class="result" id="divCalcFactorial"></div>
+        </div>
+      </div>
+      <!-- Exercise 5 -->
+      <div class="exercise-5 item">
+        <div class="content">
+          <h1>Exercise 5</h1>
+          <button id="btnPrintPrime" class="btn btn-primary font-weight-bold">
+            Xuất số nguyên tố <br>
+            từ 1 đến n
+          </button>
+          <div class="text_input">
+            <input type="text" id="numberE5" class="text-primary" placeholder="Nhập số giới hạn" />
+          </div>          
+          <div class="result text-left" id="divPrintPrime"></div>
+        </div>
+      </div>
+      <!-- Exercise 4 -->
+      <!-- Create 10 tag Div -->
+        <div class="exercise-4 item">
+          <div class="content">
+            <h1>Exercise 4</h1>
+            <button id="btnCreate10Div" class="btn btn-primary font-weight-bold">
+              In và tô màu 10 thẻ DIV
+            </button>
+            <div class="result text-left" id="divCreate10Div"></div>
+          </div>
+        </div>
+      <!-- Create n tag Div -->
+        <div class="exercise-4 item">
+          <div class="content">
+            <h1>Exercise 4</h1>
+            <button id="btnCreateDiv" class="btn btn-primary font-weight-bold">
+              In và tô màu n thẻ DIV
+            </button>
+            <div class="text_input">
+              <input type="text" id="numberDiv" class="text-primary" placeholder="Nhập số thẻ Div muốn tạo" />
+            </div>          
+            <div class="result text-left" id="divCreateDiv"></div>
+          </div>
+        </div>
+      </div>
+    <!-- Bootstrap 4.6.1 -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- JavaScript ------------------------------------>
+    <script src="./index.js"></script>
+  </body>
+</html>

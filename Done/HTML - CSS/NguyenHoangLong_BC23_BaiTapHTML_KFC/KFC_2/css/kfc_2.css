@@ -1,0 +1,80 @@
+/* HEADER */
+    .header img{
+        width: 100px;
+    }
+    .header h1{
+        color: #ffffff;
+        background-color: #ff0000;
+    }
+
+/* NAVIGATION */
+    .navigation a{
+        display: block;
+        font-size: 20px;
+    }
+
+/* INTRO */
+    .intro_top, .intro_bottom{
+        background-color:#a52a2a;
+        color: #ffffff;
+    }
+    .intro img{
+        width: 50%;
+    }
+    .intro h1{
+        text-align: center;
+        font-size: 40px;       
+    }
+    /* Intro top */
+    .intro_top p{
+        font-size: 30px;
+        text-align: justify;
+    }
+    .intro_top p span{
+        font-weight: bold;
+        font-style: italic;
+        color: #000000;
+    }
+    /* Intro bottom */
+    .intro_bottom ul li{
+        font-size: 25px;
+    }
+
+/* TABLE */
+    .titleprice{
+        text-align: center;
+    }
+    .table{
+        margin: auto; 
+        width: 900px; 
+        border: 1px #000000 solid;   
+        height: 800px;  
+    }
+    .table tr th{
+        border: 1px #000000 solid; 
+        height: 50px;
+    }
+    .table tr td{
+        border: 1px #000000 solid; 
+    }
+    .to_center{
+        text-align: center;
+    }
+    .to_right{
+        text-align: right;
+    }
+    .greentea{
+        background-image: url(../../img/greentea.jpg);        
+    }
+    .blacktea{
+        background-image: url(../../img/blacktea.jpg);
+    }
+    .olongtea{
+        background-image: url(../../img/olongtea.jpg);
+    }
+    .fruittea{
+        background-image: url(../../img/fruit.jpg);
+    }
+    .milktea{
+        background-image: url(../../img/milktea.png);
+    }

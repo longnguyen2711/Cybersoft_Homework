@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài tập JavaScript buổi 1</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- Exercise 1 -->
+    <main class="list">
+      <div class="exercise-1 item">
+        <span>Nhập số ngày công </span
+        ><input type="text" id="workingDays" /><br /><br />
+        <span>Tiền lương nhân viên </span
+        ><input type="text" id="totalSalary" /><br /><br />
+        <input type="button" value="Tính" onclick="salary()" />
+      </div>
+      <!-- Exercise 2 -->
+      <div class="exercise-2 item">
+        <span>Number 1 </span><input type="text" id="number1" /><br /><br />
+        <span>Number 2 </span><input type="text" id="number2" /><br /><br />
+        <span>Number 3 </span><input type="text" id="number3" /><br /><br />
+        <span>Number 4 </span><input type="text" id="number4" /><br /><br />
+        <span>Number 5 </span><input type="text" id="number5" /><br /><br />
+        <span>Giá trị trung bình của 5 số: </span
+        ><input type="text" id="average" /><br /><br />
+        <input type="button" value="Tính" onclick="average()" />
+      </div>
+      <!-- Exercise 3 -->
+      <div class="exercise-3 item">
+        <span>Nhập số lượng Usd </span
+        ><input type="text" id="usdAmount" /><br /><br />
+        <span>Giá trị đổi ra Vnđ: </span
+        ><input type="text" id="vndAmount" /><br /><br />
+        <input type="button" value="Tính" onclick="vnd()" />
+      </div>
+      <!-- Exercise 4 -->
+      <div class="exercise-4 item">
+        <span>Chiều dài </span><input type="text" id="length" /><br /><br />
+        <span>Chiều rộng </span><input type="text" id="width" /><br /><br />
+        <span>Chu vi: </span><input type="text" id="perimeter" /><br /><br />
+        <span>Diện tích: </span><input type="text" id="area" /><br /><br />
+        <input type="button" value="Tính" onclick="areaperimeter()" />
+      </div>
+      <!-- Exercise 5 -->
+      <div class="exercise-5 item">
+        <span>Nhập số có 2 chữ số </span
+        ><input type="text" id="twoDigitNumber" /><br /><br />
+        <span>Tổng của chữ sồ hàng chục và hàng đơn vị: </span
+        ><input type="text" id="sumUnitDozen" /><br /><br />
+        <input type="button" value="Tính" onclick="sumunitdozen()" />
+      </div>
+    </main>
+    <!-- JavaScript ------------------------------------>
+    <script src="./index.js"></script>
+  </body>
+</html>

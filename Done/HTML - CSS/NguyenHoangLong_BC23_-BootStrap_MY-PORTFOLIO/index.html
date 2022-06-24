@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MY PORTFOLIO</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;600;700&family=Oswald:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- START -->
+    <!-- Header -->
+    <header class="header fixed-top position-absolute">
+      <main class="herader__main">
+        <div class="container">
+          <nav class="navbar navbar-expand-lg py-3">
+            <a class="navbar-brand" href="#"
+              ><i class="fa fa-dice-d20 text-success"></i> CyberPortfolio</a
+            >
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <i class="fa fa-bars text-white border py-2 px-3 rounded"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav ml-auto">
+                <a class="nav-link text-white mr-4 active" href="#">Home </a>
+                <a class="nav-link text-white mr-4" href="#">About</a>
+                <a class="nav-link text-white mr-4" href="#">Service</a>
+                <a class="nav-link text-white">Contact</a>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </main>
+    </header>
+    <!-- Slider -->
+    <section class="slider">
+      <main class="slider__main">
+        <div
+          id="carouselExampleCaptions"
+          class="carousel slide carousel-fade"
+          data-ride="carousel"
+        >
+          <ol class="carousel-indicators">
+            <li
+              data-target="#carouselExampleCaptions"
+              data-slide-to="0"
+              class="active"
+            ></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item carousel-item-1 active">
+              <div class="overlay"></div>
+              <div class="carousel-caption">
+                <img
+                  src="./img/01-3.jpg"
+                  alt=""
+                  class="d-block rounded-circle wow bounceInUp animate__animated animate__slideInRight"
+                />
+                <h1
+                  class="mb-3 wow bounceInUp animate__animated animate__slideInRight"
+                >
+                  Our goals. Our mission.
+                </h1>
+                <p
+                  class="wow bounceInUp animate__animated animate__slideInRight"
+                >
+                  How we help other companies to grow.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item carousel-item-2">
+              <div class="overlay"></div>
+              <div class="carousel-caption">
+                <img
+                  src="./img/02-3.jpg"
+                  alt=""
+                  class="d-block rounded-circle wow bounceInUp animate__animated animate__slideInRight"
+                />
+                <h1
+                  class="mb-3 wow bounceInUp animate__animated animate__slideInRight"
+                >
+                  Our goals. Our mission.
+                </h1>
+                <p
+                  class="wow bounceInUp animate__animated animate__slideInRight"
+                >
+                  How we help other companies to grow.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item carousel-item-3">
+              <div class="overlay"></div>
+              <div class="carousel-caption">
+                <img
+                  src="./img/03-3.jpg"
+                  alt=""
+                  class="d-block rounded-circle wow bounceInUp animate__animated animate__slideInRight"
+                />
+                <h1
+                  class="mb-3 wow bounceInUp animate__animated animate__slideInRight"
+                >
+                  Our goals. Our mission.
+                </h1>
+                <p
+                  class="wow bounceInUp animate__animated animate__slideInRight"
+                >
+                  How we help other companies to grow.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </section>
+    <!-- Portfolio -->
+    <section class="portfolio portfolio--fix">
+      <header
+        class="portfolio__header text-center wow bounceInUp animate__animated animate__zoomIn"
+      >
+        <h1>I Love What I Do</h1>
+        <p>
+          Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+          posuere cubilia Curae; Nulla mollis dapibus nunc, ut rhoncus turpis
+          sodales quis. Integer sit amet mattis quam.Vestibulum ante ipsum
+          primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+          Nulla mollis dapibus nunc
+        </p>
+      </header>
+      <main class="portfolio__main">
+        <div class="container">
+          <ul
+            class="nav nav-pills mb-4 wow bounceInUp animate__animated animate__zoomIn"
+          >
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="pill" href="#all"
+                >All Projects</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" data-toggle="pill" href="#illustration"
+                >Illustration</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="pill" href="#photography"
+                >Photography</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="pill" href="#website">Website</a>
+            </li>
+          </ul>
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="all">
+              <div class="row">
+                <div
+                  class="col-12 col-md-6 col-lg-4 mb-4 wow bounceInUp animate__animated animate__zoomIn"
+                >
+                  <div class="item">
+                    <img src="./img/g1.jpg" alt="g1" />
+                    <div class="text">
+                      <h1>Apologetic robot holding flowers</h1>
+                      <p>Branding</p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-12 col-md-6 col-lg-4 mb-4 wow bounceInUp animate__animated animate__zoomIn"
+                >
+                  <div class="item">
+                    <img src="./img/g2.jpg" alt="g2" />
+                    <div class="text">
+                      <h1>Apologetic robot holding flowers</h1>
+                      <p>Branding</p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-12 col-md-6 col-lg-4 mb-4 wow bounceInUp animate__animated animate__zoomIn"
+                >
+                  <div class="item">
+                    <img src="./img/g3.jpg" alt="g3" />
+                    <div class="text">
+                      <h1>Apologetic robot holding flowers</h1>
+                      <p>Branding</p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-12 col-md-6 col-lg-4 mb-4 wow bounceInUp animate__animated animate__zoomIn"
+                >
+                  <div class="item">
+                    <img src="./img/g4.jpg" alt="g4" />
+                    <div class="text">
+                      <h1>Apologetic robot holding flowers</h1>
+                      <p>Branding</p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-12 col-md-6 col-lg-4 mb-4 wow bounceInUp animate__animated animate__zoomIn"
+                >
+                  <div class="item">
+                    <img src="./img/g5.jpg" alt="g5" />
+                    <div class="text">
+                      <h1>Apologetic robot holding flowers</h1>
+                      <p>Branding</p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-12 col-md-6 col-lg-4 mb-4 wow bounceInUp animate__animated animate__zoomIn"
+                >
+                  <div class="item">
+                    <img src="./img/g6.jpg" alt="g6" />
+                    <div class="text">
+                      <h1>Apologetic robot holding flowers</h1>
+                      <p>Branding</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="illustration">
+              <div class="row">
+                <div
+                  class="col-12 col-md-6 col-lg-4 mb-4 wow bounceInUp animate__animated animate__zoomIn"
+                >
+                  <div class="item">
+                    <img src="./img/g1.jpg" alt="g1" />
+                    <div class="text">
+                      <h1>Apologetic robot holding flowers</h1>
+                      <p>Branding</p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-12 col-md-6 col-lg-4 mb-4 wow bounceInUp animate__animated animate__zoomIn"
+                >
+                  <div class="item">
+                    <img src="./img/g2.jpg" alt="g2" />
+                    <div class="text">
+                      <h1>Apologetic robot holding flowers</h1>
+                      <p>Branding</p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-12 col-md-6 col-lg-4 mb-4 wow bounceInUp animate__animated animate__zoomIn"
+                >
+                  <div class="item">
+                    <img src="./img/g3.jpg" alt="g3" />
+                    <div class="text">
+                      <h1>Apologetic robot holding flowers</h1>
+                      <p>Branding</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="photography">
+              <div class="row">
+                <div
+                  class="col-12 col-md-6 col-lg-4 mb-4 wow bounceInUp animate__animated animate__zoomIn"
+                >
+                  <div class="item">
+                    <img src="./img/g4.jpg" alt="g4" />
+                    <div class="text">
+                      <h1>Apologetic robot holding flowers</h1>
+                      <p>Branding</p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-12 col-md-6 col-lg-4 mb-4 wow bounceInUp animate__animated animate__zoomIn"
+                >
+                  <div class="item">
+                    <img src="./img/g5.jpg" alt="g5" />
+                    <div class="text">
+                      <h1>Apologetic robot holding flowers</h1>
+                      <p>Branding</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="website">
+              <div
+                class="col-12 col-md-6 col-lg-4 mb-4 wow bounceInUp animate__animated animate__zoomIn"
+              >
+                <div class="item">
+                  <img src="./img/g6.jpg" alt="g6" />
+                  <div class="text">
+                    <h1>Apologetic robot holding flowers</h1>
+                    <p>Branding</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </section>
+    <!-- Hiring -->
+    <section class="hiring d-flex align-items-center">
+      <div class="overlay"></div>
+      <div
+        class="container wow bounceInUp animate__animated animate__slideInRight"
+      >
+        <header class="hiring-header text-center text-white">
+          <h1 class="font-weight-bold">I'm Available For Hire</h1>
+          <p>
+            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+            posuere cubilia Curae; Nulla mollis dapibus nunc, ut rhoncus turpis
+            sodales quis. Integer sit amet mattis quam.
+          </p>
+        </header>
+        <main class="hiring-main">
+          <div class="row text-center text-white m-auto">
+            <div class="col-12 col-md-4 mb-5 mb-md-0">
+              <div class="item">
+                <i class="fa fa-paint-brush"></i>
+                <h1>Design</h1>
+                <p>
+                  Vestibulum ante ipsum primis in faucibus orci luctus et
+                  ultrices posuere cubilia Curae; Nulla mollis dapibus nunc
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 mb-5 mb-md-0">
+              <div class="item">
+                <i class="fab fa-neos"></i>
+                <h1>Marketing</h1>
+                <p>
+                  Vestibulum ante ipsum primis in faucibus orci luctus et
+                  ultrices posuere cubilia Curae; Nulla mollis dapibus nunc
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 mb-5 mb-md-0">
+              <div class="item">
+                <i class="fa fa-camera"></i>
+                <h1>Photography</h1>
+                <p>
+                  Vestibulum ante ipsum primis in faucibus orci luctus et
+                  ultrices posuere cubilia Curae; Nulla mollis dapibus nunc
+                </p>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </section>
+    <!-- Award -->
+    <section class="award">
+      <main
+        class="award__main wow bounceInUp animate__animated animate__slideInRight"
+      >
+        <div class="container-lg">
+          <div class="row text-justify m-auto d-flex align-items-center">
+            <div class="col-12 col-md-6 col-lg-5 award-left mb-5 mb-md-0">
+              <div class="item list">
+                <h1>Our Achievement and Award</h1>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                  elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus
+                  leo.
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-7 award-right">
+              <div class="item">
+                <p>
+                  Luctus porta semper aptent morbi. Vestibulum lectus tempus
+                  augue dictumst enim commodo facilisis. Mus laoreet scelerisque
+                  habitant urna dui sem diam. Purus dis nam eget. Scelerisque
+                  placerat lectus lorem etiam. Elementum integer phasellus
+                  lectus.
+                </p>
+                <div class="award-img d-flex">
+                  <img src="./img/award-1.png" alt="award-1" />
+                  <img src="./img/award-2.png" alt="award-2" />
+                  <img src="./img/award-3.png" alt="award-3" />
+                  <img src="./img/award-4.png" alt="award-4" />
+                  <img src="./img/award-5.png" alt="award-5" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </section>
+    <!-- Footer -->
+    <section class="footer">
+      <main
+        class="footer__main text-center wow bounceInUp animate__animated animate__slideInRight"
+      >
+        <div class="container">
+          <div class="footer-above">
+            <a href="https://www.facebook.com/"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="https://www.google.com.vn/"
+              ><i class="fab fa-google-plus-g"></i
+            ></a>
+            <a href="https://www.linkedin.com/"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+          </div>
+          <div class="footer-below">
+            <p class="m-0">
+              © 2021 CyberPortfolio. All rights reserved | Designed by CyberSoft
+            </p>
+          </div>
+        </div>
+      </main>
+    </section>
+    <!-- END -->
+    <!-- Bootstrap 4.6.1 -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Wow Master -->
+    <script src="./WOW-master/dist/wow.js"></script>
+    <script
+      type="text/javascript
+    "
+    >
+      new WOW().init();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,133 @@
+* {
+  padding: 0;
+  font-family: "Times New Roman", Times, serif;
+}
+.list {
+  flex-wrap: wrap;
+  justify-content: start;
+  flex-direction: column;
+}
+.item {
+  width: 50%;
+  padding: 10px;
+  text-align: center;
+}
+.content {
+  height: 100%;
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid #000000;
+  background-color: #000000;
+  display: flex;
+  flex-direction: column;
+}
+.content h1 {
+  color: #ffff00;
+  font-weight: bold;
+  font-size: 25px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+button {
+  width: 100%;
+  margin-bottom: 10px;
+  box-shadow: 0 0 10px yellow;
+}
+input {
+  border-radius: 5px;
+  padding: 5px 10px;
+  width: 95%;
+  margin-top: 15px;
+  box-shadow: 0 0 5px yellow;
+}
+.result-list {
+  margin-top: 20px;
+  color: #ffff00;
+  font-weight: bold;
+}
+.result {
+  font-weight: bold;
+}
+.item .result {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.div-exercise-4 {
+  padding: 5px;
+  text-align: center;
+  border-radius: 5px;
+}
+.group-btn {
+  padding: 0 2.5%;
+  flex-wrap: wrap;
+}
+.group-btn button {
+  margin: 10px 0 20px 0;
+}
+.item-1 .group-btn button {
+  width: 30%;
+}
+.add-number {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+.add-number > button {
+  width: 35%;
+  float: left;
+  margin-top: 30px;
+  margin-left: 2.5%;
+  margin-right: 5%;
+}
+.group-result .result {
+  text-align: left;
+  margin-top: 10px;
+}
+.item-2 .group-btn button {
+  width: 47.5%;
+}
+.group-btn-swap {
+  display: flex;
+  align-items: center;
+  width: 47.5%;
+  justify-content: space-between;
+}
+.group-btn .group-btn-swap > button {
+  width: 70%;
+  padding: 6px 12px;
+  margin: 10px 0 20px 0;
+}
+.group-btn-swap input {
+  width: 15%;
+  margin: 0;
+  padding: 5px 0;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.group-btn-swap input:first-of-type {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+#btnCreateCard {
+  margin-top: 10px;
+  width: 20%;
+  margin-left: 2.5%;
+}
+.item-card input {
+  width: 20%;
+  display: flex;
+  justify-content: start;
+  margin-left: 2.5%;
+}
+.item-card {
+  width: 100%;
+}
+.item-card h3 {
+  margin: 20px 0;
+  text-align: center;
+  font-weight: bold;
+  color: #ffff00;
+}
+
+

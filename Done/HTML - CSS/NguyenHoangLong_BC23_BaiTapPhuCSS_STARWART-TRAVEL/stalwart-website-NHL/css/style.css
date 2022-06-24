@@ -1,0 +1,350 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1280px;
+  width: 90%;
+  margin: auto;
+}
+.clear {
+  clear: both;
+}
+
+/* HEADER */
+.header {
+  background-color: #ffffff;
+  padding: 20px 0;
+  position: relative;
+}
+.header .logo a {
+  position: absolute;
+  text-decoration: none;
+}
+.header .logo a p {
+  color: #dc4312;
+  font-size: 50px;
+  font-weight: normal;
+}
+.header .logo a h1 {
+  color: #ffffff;
+  font-size: 13px;
+  text-indent: 15px;
+  position: relative;
+  top: -5px;
+}
+.header .navbar {
+  text-align: right;
+}
+.header .navbar a {
+  text-decoration: none;
+  color: #29c0ff;
+  font-size: 17px;
+  margin-left: 20px;
+}
+.header .navbar a.active {
+  color: #dc4312;
+}
+.header .navbar a:hover {
+  color: #dc4312;
+}
+
+/* CAROUSEL */
+.carousel {
+  background-image: url(../img/banner2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 500px;
+}
+.carousel .carousel-main {
+  text-align: right;
+  margin-right: 50px;
+  padding-top: 180px;
+  color: #323232;
+}
+.carousel .carousel-main p {
+  display: inline-block;
+  font-size: 40px;
+  letter-spacing: 5px;
+  margin-bottom: 25px;
+  padding-right: 15px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.carousel .carousel-main span {
+  display: inline-block;
+  font-size: 13px;
+  letter-spacing: 5px;
+  word-spacing: 5px;
+  margin-bottom: 10px;
+  padding-right: 15px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* INTRO */
+.intro {
+  background-color: #29c0ff;
+  padding: 30px 0;
+}
+.intro .intro-main p {
+  display: inline-block;
+  font-size: 30px;
+  margin-bottom: 15px;
+  color: #323232;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.intro .intro-main span {
+  display: inline-block;
+  text-align: justify;
+  font-size: 14px;
+  color: #dad6e2;
+}
+
+/* WELCOME */
+/* Welcome header */
+.welcome {
+  background-color: #ffffff;
+}
+.welcome .welcome-header {
+  text-align: center;
+  width: 50%;
+  margin: auto;
+}
+.welcome .welcome-header p {
+  font-size: 40px;
+  color: #000000;
+  margin: 35px 0 25px 0;
+}
+.welcome .welcome-header span {
+  display: inline-block;
+  font-size: 14px;
+  color: #999;
+  line-height: 20px;
+  margin-bottom: 15px;
+}
+/* Welcome main */
+.welcome .welcome-main .list .item {
+  float: left;
+  width: 50%;
+}
+.welcome .welcome-main .list .item img {
+  display: block;
+  width: 100%;
+  cursor: pointer;
+}
+.welcome .welcome-main .list .item-text {
+  padding: 25px 0 0 30px;
+  text-align: justify;
+}
+.welcome .welcome-main .list .item-text-above,
+.welcome .welcome-main .list .item-text-below {
+  position: relative;
+  width: 50%;
+}
+.welcome .welcome-main .list .item-text p {
+  font-size: 30px;
+  color: #dc4312;
+  margin-bottom: 15px;
+}
+.welcome .welcome-main .list .item-text span {
+  display: inline-block;
+  font-size: 14px;
+  color: #999;
+  line-height: 20px;
+}
+.welcome .welcome-main .list .item-text a i {
+  font-size: 30px;
+  color: #29c0ff;
+  position: absolute;
+  left: 7px;
+  top: 28px;
+}
+.welcome .welcome-main .list .item-text a i:hover {
+  color: #00a68e;
+}
+
+/* OUR WORKS */
+/* Our works header */
+.our-work {
+  background-color: #ffffff;
+}
+.our-work .our-work-header p {
+  text-align: center;
+  font-size: 40px;
+  color: #000000;
+  margin: 40px 0 25px 0;
+}
+/* Our works main */
+.our-work .our-work-main .item {
+  float: left;
+  width: calc(100% / 3);
+  padding: 0 3px;
+  margin-bottom: 6px;
+  cursor: pointer;
+}
+.our-work .our-work-main .item img {
+  width: 100%;
+  display: block;
+}
+
+/* SUCCES */
+/* Succes header */
+.succes {
+  background-color: #ffffff;
+  padding-bottom: 60px;
+}
+.succes .succes-header p {
+  text-align: center;
+  font-size: 40px;
+  color: #000000;
+  margin: 70px 0 25px 0;
+}
+/* Succes main */
+/* Succes main text*/
+.succes .succes-main .list .item {
+  float: left;
+}
+.succes .succes-main .list .item-text {
+  width: 55%;
+}
+.succes .succes-main .list .item-text .content p {
+  font-size: 25px;
+  color: #000000;
+  margin-bottom: 10px;
+}
+.succes .succes-main .list .item-text .content .our-service {
+  margin-bottom: 25px;
+}
+.succes .succes-main .list .item-text .content li {
+  list-style: none;
+  margin-bottom: 5px;
+}
+.succes .succes-main .list .item-text .content li a {
+  text-decoration: none;
+  color: #999;
+}
+.succes .succes-main .list .item-text .content li a i {
+  font-size: 17px;
+  color: #29c0ff;
+  margin-right: 5px;
+}
+.succes .succes-main .list .item-text .content li:hover a,
+.succes .succes-main .list .item-text .content li:hover a i {
+  color: #dc4312;
+}
+/* Succes main img*/
+.succes .succes-main .list .item-img {
+  width: 45%;
+  background-image: url(../img/index-serives.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 45px 0 20px 0;
+}
+.succes .succes-main .list .item-img .succes-info ul li {
+  list-style: none;
+  padding-left: 70px;
+  margin-bottom: 25px;
+}
+.succes .succes-main .list .item-img .succes-info ul li a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #ffffff;
+}
+.succes .succes-main .list .item-img .succes-info ul li a span {
+  font-size: 22px;
+  color: #29c0ff;
+  font-weight: bold;
+  margin-right: 25px;
+}
+.succes .succes-main .list .item-img .succes-info ul li:hover a,
+.succes .succes-main .list .item-img .succes-info ul li:hover span {
+  color: #dc4312;
+}
+
+/* FOOTER */
+.footer {
+  background-color: #242424;
+  padding: 50px 0 20px 0;
+}
+.footer .footer-main .list .item {
+  float: left;
+  width: 25%;
+  padding-left: 40px;
+}
+.footer .footer-main .list .item-1 h1,
+.footer .footer-main .list .item-2 h1,
+.footer .footer-main .list .item-3 h1 {
+  font-size: 17px;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+/* Footer item 1 & 2 */
+.footer .footer-main .list .item-1 ul li,
+.footer .footer-main .list .item-2 ul li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+.footer .footer-main .list .item-1 ul li a,
+.footer .footer-main .list .item-2 ul li a {
+  font-size: 14px;
+  text-decoration: none;
+  color: #999;
+}
+.footer .footer-main .list .item-1 ul li a:hover,
+.footer .footer-main .list .item-2 ul li a:hover {
+  color: #dc4312;
+}
+/* Footer item 3 */
+.footer .footer-main .list .item-3 {
+  padding-left: 0;
+}
+.footer .footer-main .list .item-3 p {
+  font-size: 14px;
+  color: #999;
+  display: block;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+.footer .footer-main .list .item-3 input {
+  width: 200px;
+  padding: 4px 5px;
+}
+.footer .footer-main .list .item-3 button {
+  padding: 5.5px 15px;
+  color: #ffffff;
+  background-color: #eb5424;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  right: 4px;
+  top: 0.25px;
+}
+.footer .footer-main .list .item-3 button:hover {
+  background-color: #73c53f;
+  color: #000000;
+}
+/* Footer item 4 */
+.footer .footer-main .list .item-4 {
+  margin-top: 25px;
+}
+.footer .footer-main .list .item-4 h1 {
+  font-size: 40px;
+  font-weight: normal;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+.footer .footer-main .list .item-4 span {
+  display: block;
+  font-size: 14px;
+  color: #999;
+  margin-bottom: 15px;
+}
+.footer .footer-main .list .item-4 p {
+  font-size: 14px;
+  color: #999;
+}
+.footer .footer-main .list .item-4 p a {
+  text-decoration: none;
+  color: #dc4312;
+}

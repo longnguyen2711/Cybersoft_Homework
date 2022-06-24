@@ -1,0 +1,290 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Hind", sans-serif;
+}
+body {
+  max-width: 1280px;
+  width: 100%;
+  margin: auto;
+  background-color: #000000;
+}
+h1.animate__slideInRight {
+  animation-delay: 1s;
+}
+p.animate__slideInRight {
+  animation-delay: 2s;
+}
+/* HEADER */
+.header .navbar-brand {
+  font-size: 35px;
+  color: #ffffff;
+}
+.header .navbar-brand:hover {
+  color: #35a22c;
+}
+.header .navbar-brand i:before {
+  font-size: 40px;
+  color: #35a22c;
+}
+.header .nav-link:hover,
+.header .nav-link.active {
+  color: #35a22c !important;
+}
+.header .nav-link {
+  position: relative;
+}
+.header .nav-link::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: #35a22c;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: all 0.5s;
+}
+.header .nav-link:hover::after,
+header .nav-link.active::after {
+  width: 100%;
+}
+
+/* SLIDER */
+.slider .carousel-item {
+  height: 650px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+.slider .carousel-item-1 {
+  background-image: url(../img/finland.jpg);
+}
+.slider .carousel-item-2 {
+  background-image: url(../img/mountains.jpg);
+}
+.slider .carousel-item-3 {
+  background-image: url(../img/mountains-1.jpg);
+}
+.slider .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(39, 43, 54, 0.5);
+}
+.slider .carousel-caption img {
+  width: 150px;
+  height: 150px;
+  margin: auto;
+}
+.slider .carousel-caption {
+  top: 25%;
+}
+.slider .carousel-indicators li {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  margin-bottom: 5%;
+}
+.slider .carousel-indicators .active {
+  background-color: #35a22c;
+}
+.slider .carousel-item h1 {
+  font-size: 55px;
+}
+.slider .carousel-item p {
+  font-size: 25px;
+}
+
+/* PORTFOLIO */
+.portfolio {
+  padding: 80px 0;
+  background-color: #ffffff;
+}
+.portfolio__header {
+  margin-bottom: 40px;
+}
+.portfolio__header h1 {
+  font-size: 36px;
+  font-weight: bold;
+}
+.portfolio__header p {
+  color: #585858;
+  margin-top: 15px;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 0 20%;
+}
+.portfolio__main .nav-link {
+  color: #1a1d2d;
+  border: 1px solid #1a1d2d;
+  border-radius: 5px;
+  margin: 0 5px;
+}
+.portfolio__main .nav-pills .nav-link.active {
+  background-color: #35a22c;
+  border: 1px solid #35a22c;
+}
+.portfolio__main .nav-pills {
+  justify-content: center;
+}
+.portfolio__main .tab-content .item .text {
+  padding: 20px 25px 25px 30px;
+  text-align: center;
+  box-shadow: 0 0 3px grey;
+  border-radius: 0 0 15px 15px;
+  border: 1px solid #ffffff;
+  border-top: none;
+}
+.portfolio__main .tab-content .item .text h1 {
+  font-size: 20px;
+  font-weight: normal;
+}
+.portfolio__main .tab-content .item .text p {
+  color: #585858;
+}
+.portfolio__main .tab-content img {
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+  cursor: pointer;
+}
+.portfolio__main .tab-content .item:hover .text {
+  border: 1px solid #35a22c;
+  border-top: none;
+  transition: 1s;
+}
+.portfolio__main .tab-content .item:hover .text h1 {
+  color: #35a22c;
+  box-shadow: none;
+}
+
+/* HIRING */
+.hiring {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  background-image: url(../img/3.jpg);
+}
+.hiring .container {
+  z-index: 1;
+}
+.hiring .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(7, 10, 12, 0.72);
+}
+.hiring .hiring-header {
+  margin: 80px 0;
+}
+.hiring .hiring-header h1 {
+  font-size: 36px;
+}
+.hiring .hiring-header p {
+  margin-top: 15px;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 0 20%;
+}
+.hiring .hiring-main {
+  margin-bottom: 80px;
+}
+.hiring .hiring-main .row .item {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 40px;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.hiring .hiring-main .row .item:hover {
+  background-color: #000000;
+  border: 1px solid #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+}
+.hiring .hiring-main .row .item i {
+  color: #35a22c;
+  font-size: 45px;
+  margin-bottom: 30px;
+}
+.hiring .hiring-main .row .item h1 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+}
+.hiring .hiring-main .row .item p {
+  font-size: 16px;
+  line-height: 24px;
+  padding-top: 15px;
+}
+/* ARWARD */
+.award {
+  padding: 80px 0;
+  background-color: #ffffff;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(../img/memphis_3.png);
+}
+.award .award-left {
+  padding: 45px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 0 30px 0 rgb(0 0 0 / 30%);
+}
+.award .award-left h1 {
+  margin-bottom: 20px;
+  font-size: 36px;
+  line-height: 42px;
+  color: #1a1d2d;
+  font-weight: 600;
+}
+.award .award-left p {
+  color: #585858;
+  line-height: 24px;
+}
+.award .award-right {
+  padding-left: 40px;
+  color: #585858;
+}
+.award .award-right .award-img img {
+  width: 20%;
+}
+
+/* FOOTER */
+.footer {
+  background-color: #222222;
+  color: #aaa;
+  padding: 50px;
+}
+.footer__main .footer-above a {
+  text-decoration: none;
+  margin: 0 5px;
+}
+.footer__main .footer-above {
+  padding-bottom: 30px;
+  border-bottom: 1px solid #424242;
+}
+.footer__main .footer-above a i {
+  width: 42px;
+  height: 42px;
+  line-height: 42px;
+  border-radius: 50%;
+  border: 1px solid #424242;
+  color: #aaa;
+  transition: all 0.5s;
+}
+.footer__main .footer-above a:hover i {
+  border: 1px solid #35a22c;
+  color: #35a22c;
+}
+.footer__main .footer-below {
+  padding-top: 30px;
+}

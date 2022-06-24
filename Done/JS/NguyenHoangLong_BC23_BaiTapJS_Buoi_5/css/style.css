@@ -1,0 +1,86 @@
+* {
+  padding: 0;
+  font-family: "Times New Roman", Times, serif;
+}
+body > h1 {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 30px;
+}
+.list {
+  flex-wrap: wrap;
+}
+.item {
+  width: 25%;
+  padding: 10px;
+  text-align: center;
+}
+.content {
+  height: 100%;
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid #000000;
+  background-color: #000000;
+  display: flex;
+  flex-direction: column;
+}
+.content h1 {
+  color: #ffff00;
+  font-weight: bold;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+button {
+  width: 100%;
+  margin-bottom: 10px;
+}
+input {
+  border-radius: 5px;
+  padding: 5px 10px;
+  width: 90%;
+  margin-top: 15px;
+}
+.result {
+  margin-top: 20px;
+  color: #ffff00;
+  font-weight: bold;
+}
+.chooseCustomerType ul {
+  margin: auto;
+  justify-content: center;
+  margin-bottom: 8px;
+  margin-top: 20px;
+  color: #ffff00;
+}
+.chooseCustomerType ul li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.chooseCustomerType ul li:first-of-type {
+  width: 40%;
+}
+.chooseCustomerType ul li:last-of-type {
+  width: 60%;
+}
+.chooseCustomerType ul input {
+  margin: 0;
+  width: 25%;
+}
+.chooseCustomerType ul label {
+  cursor: pointer;
+}
+.text_input-4 {
+  display: flex;
+  flex-direction: column;
+}
+.text_input-4 > input {
+  margin-left: auto;
+  margin-right: auto;
+}
+.item .result {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}

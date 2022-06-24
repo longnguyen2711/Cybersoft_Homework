@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài tập JavaScript buổi 7</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/funny.css">
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="list d-flex text-center">
+      <div class="item item-2">
+        <div class="content">
+          <h1>BÀI TẬP JAVASCRIPT</h1>
+          <!--1-2-3-4-5-6-7-8-->
+          <div class="group-btn d-flex justify-content-between">
+            <button id="btn_sumPositiveNumbers" class="btn btn-primary font-weight-bold">Tổng các số dương</button>
+            <button id="btn_countPositiveNumbers" class="btn btn-primary font-weight-bold">Đếm các số dương</button>
+            <button id="btn_minNumber" class="btn btn-primary font-weight-bold">Số nhỏ nhất</button>
+            <button id="btn_minPositiveNumber" class="btn btn-primary font-weight-bold">Số dương nhỏ nhất</button>
+            <button id="btn_lastEvenNumber" class="btn btn-primary font-weight-bold">Số chẵn cuối cùng</button>
+            <button id="btn_sortAscending" class="btn btn-primary font-weight-bold">Sắp xếp tăng dần</button>
+            <button id="btn_firstPrimeNumber" class="btn btn-primary font-weight-bold">Số nguyên tố đầu tiên</button>
+            <div class="group-btn-swap">
+              <button id="btn_swapTwoNumber" class="btn btn-primary font-weight-bold">Đổi chỗ 2 giá trị</button>
+              <input type="text" id="position_1" class="text-primary" placeholder="" />
+              <input type="text" id="position_2" class="text-primary" placeholder="" />
+            </div>
+          </div>
+          <div class="text_input">
+            <input type="text" id="numberInteger" class="text-primary" placeholder="Nhập vào số nguyên" />
+          </div>
+          <div class="add-number">
+            <button id="btnAddIntegerNumber" class="btn btn-success font-weight-bold" onclick="addIntegerNumber(addNumber)">Thêm số nguyên</button>
+            <div class="result-list" id="showList_integerNumberAdd"></div>
+          </div>
+          <div class="group-result  mb-5">
+            <div style="display: none;" class="result alert alert-success" id="divResult_sumPositiveNumbers"></div>
+            <div style="display: none;" class="result alert alert-success" id="divResult_countPositiveNumbers"></div>
+            <div style="display: none;" class="result alert alert-success" id="divResult_minNumber"></div>
+            <div style="display: none;" class="result alert alert-success" id="divResult_minPositiveNumber"></div>
+            <div style="display: none;" class="result alert alert-success" id="divResult_lastEvenNumber"></div>
+            <div style="display: none;" class="result alert alert-success" id="divResult_sortAscending"></div>
+            <div style="display: none;" class="result alert alert-success" id="divResult_firstPrimeNumber"></div>
+            <div style="display: none;" class="result alert alert-success" id="divResult_swapTwoNumber"></div>
+          </div>
+          <!--9-10-->
+          <div class="group-btn d-flex justify-content-between">
+            <button id="btn_countIntegerNumbers" class="btn btn-primary font-weight-bold">Đếm số nguyên</button>
+            <button id="btn_comparePositiveNegative" class="btn btn-primary font-weight-bold">So sánh lượng số dương và số âm</button>
+          </div>
+          <div class="text_input">
+            <input type="text" id="numberReal" class="text-primary" placeholder="Nhập vào số thực" />
+          </div>          
+          <div class="add-number">
+            <button id="btnAddRealNumber" class="btn btn-success font-weight-bold" onclick="addRealNumber(addNumber)">Thêm số thực</button>
+            <div class="result-list" id="showList_realNumberAdd"></div>
+          </div>
+          <div class="group-result">
+            <div style="display: none;" class="result alert alert-success" id="divResult_countIntegerNumbers"></div>
+            <div style="display: none;" class="result alert alert-success" id="divResult_comparePositiveNegative"></div>
+          </div>
+        </div>
+      </div>
+      <!-- Create card -->
+      <div class="item item-card">
+        <div class="content">
+          <h1>BÀI TẬP TẠO GIAO DIỆN SẢN PHẨM BẰNG VÒNG LẶP</h1>
+          <button id="btnCreateCard" class="btn btn-success font-weight-bold">In sản phẩm</button>
+          <div class="text_input">
+            <input type="text" id="numberCard" class="text-primary" placeholder="Nhập vào số sản phẩm" />
+          </div> 
+          <div style="display: none;" class="result text-left justify-content-between" id="divResult">
+            <h3>Danh sách sản phẩm</h3>
+            <div class="container">
+              <div class="row d-flex" id="content"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="loader">
+      <span style="--i:1;"></span>
+      <span style="--i:2;"></span>
+      <span style="--i:3;"></span>
+      <span style="--i:4;"></span>
+      <span style="--i:5;"></span>
+      <span style="--i:6;"></span>
+      <span style="--i:7;"></span>
+      <span style="--i:8;"></span>
+      <span style="--i:9;"></span>
+      <span style="--i:10;"></span>
+    </div>
+    <!-- Bootstrap 4.6.1 -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- JavaScript ------------------------------------>
+    <script src="./index.js"></script>
+  </body>
+</html>
